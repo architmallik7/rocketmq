@@ -17,7 +17,7 @@
 startup --host_jvm_args=-Xmx2g
 
 run --color=yes
-build --remote_cache={{ .EndpointURL }}
+build --remote_cache=http://localhost:8082/cache/bazel
 build --color=yes
 build --enable_platform_specific_config
 
